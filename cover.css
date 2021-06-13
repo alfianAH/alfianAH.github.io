@@ -51,3 +51,10 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+a.icon-block {
+  color:#fff;
+  display:inline-block;
+  padding:5px 5px 5px 5px;
+  text-align:center;
+}
