@@ -5,6 +5,14 @@ a.icon-block {
     text-align:center;
 }
 
+.about-me{
+    object-fit: contain;
+    max-height:400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .project-img{
     object-fit: contain;
     max-height: 225px;
