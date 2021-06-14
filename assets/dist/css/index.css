@@ -7,6 +7,7 @@ a.icon-block {
 
 .about-me{
     object-fit: contain;
+    border-radius: 10px 10px 10px 10px;
     max-height:400px;
     background-position: center;
     background-repeat: no-repeat;
