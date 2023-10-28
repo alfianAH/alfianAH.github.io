@@ -1,3 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-sm bg-neutral-200 text-neutral-800 leading-normal scroll-smooth min-h-screen;
+    }
+
+    main{
+        @apply p-4 min-h-screen;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        @apply font-bold;
+    }
+
+    h1{
+        @apply text-base;
+    }
+
+    h2{
+        @apply text-sm;
+    }
+
+    h3{
+        @apply text-xs;
+    }
+
+    @media screen(sm){
+        main{
+            @apply py-4 px-8;
+        }
+    }
+
+    @media screen(md){
+        body{
+            @apply text-base;
+        }
+
+        h1{
+            @apply text-2xl;
+        }
+
+        h2{
+            @apply text-xl;
+        }
+
+        h3{
+            @apply text-lg;
+        }
+    }
+    
+    @media screen(lg){
+        body{
+            @apply text-lg;
+        }
+
+        h1{
+            @apply text-3xl;
+        }
+
+        h2{
+            @apply text-2xl;
+        }
+
+        h3{
+            @apply text-xl;
+        }
+    }
+    
+    @media screen(xl){
+        h1{
+            @apply text-4xl;
+        }
+
+        h2{
+            @apply text-3xl;
+        }
+
+        h3{
+            @apply text-2xl;
+        }
+    }
+}
+
+@layer components{
+    
+}
+
+@layer utilities{
+    .neo-brutalism-from-center{
+        @apply relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center;
+    }
+}
