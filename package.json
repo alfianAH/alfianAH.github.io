@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "run-css": "npx tailwindcss -i ./assets/src/css/input.css -o ./assets/public/css/index.css --watch",
+    "min-css": "npx tailwindcss -o ./assets/public/css/index.min.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.5"
+  }
+}
