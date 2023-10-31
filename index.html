@@ -48,7 +48,7 @@
                     <h2>Projects</h2>
                     
                     <div class="flex flex-row flex-wrap">
-                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group">
+                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#project-1">
                             <div class="rounded-lg overflow-hidden w-full">
                                 <img src="assets/img/projects/regret/icon.png" alt="icon" class="w-full group-hover:scale-110 object-cover transition duration-300 ease-in-out">
                             </div>
@@ -95,6 +95,97 @@
                 </div>
             </div>
 
+            <div>
+                <div class="modal" id="project-1">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Project 1</h3>
+                                <button class="btn border-none" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="flex flex-col lg:flex-row-reverse">
+                                    <div class="w-full lg:w-2/6 mb-3 lg:mb-0 lg:ml-4">
+                                        <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 overflow-x-scroll h-36 lg:h-full">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/regret/screenshot-1.png" alt="screenshot-1">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-4/6">
+                                        <p>Sebuah game narrative adventure, dimana pemain harus menemukan penyebab kemiskinan di sebuah desa dengan mengumpulkan petunjuk dari objek-objek tersembunyi dan keterangan saksi mata.</p>
+                                        
+                                        <table>
+                                            <tr>
+                                                <td class="align-top min-w-[8rem] md:min-w-[9rem] lg:min-w-[10rem]">Release date</td>
+                                                <td class="align-top min-w-[1rem]">:</td>
+                                                <td>September 29<sup>th</sup>, 2023</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My main role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Programmer</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My secondary role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Producer</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">Members</td>
+                                                <td class="align-top">:</td>
+                                                <td>
+                                                    <ol class="list-decimal ml-5">
+                                                        <li>Alfian Aldy Hamdani</li>
+                                                        <li>Alfian Aldy Hamdani</li>
+                                                        <li>Alfian Aldy Hamdani</li>
+                                                        <li>Alfian Aldy Hamdani</li>
+                                                        <li>Alfian Aldy Hamdani</li>
+                                                    </ol>
+                                                </td>
+                                            </tr>
+                                        </table>
+
+                                        <h4>My contributions</h4>
+                                        <ol class="list-decimal ml-5">
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, exercitationem?</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, exercitationem?</li>
+                                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, exercitationem?</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
+                                <a class="btn btn-primary btn-icon-start" href="https://google.com" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                    Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="fixed inset-0 z-[45] hidden h-screen w-screen place-items-center bg-black bg-opacity-60 backdrop-blur-sm transition-opacity duration-300" id="backdrop">
+
+                </div>
+            </div>
+
             <!-- About -->
             <div id="about">
                 
@@ -106,5 +197,8 @@
             </div>
         </div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="assets/public/js/modal.js"></script>
 </body>
 </html>
