@@ -13,12 +13,12 @@
         <nav>
             <div class="flex justify-between items-center space-x-3">
                 <div>
-                    <a href="." class="font-bold hover:text-neutral-600 active:text-neutral-700 text-base md:text-xl lg:text-3xl hover:no-underline transition-colors truncate block max-w-[10rem] sm:max-w-none" role="link">
+                    <a href="." class="font-bold hover:text-neutral-600 active:text-neutral-700 text-base md:text-xl lg:text-3xl hover:no-underline transition-colors" role="link">
                         Game Programmer Portfolio
                     </a>
                 </div>
 
-                <div class="flex space-x-2.5 sm:space-x-3 md:space-x-6">
+                <div class="hidden sm:flex space-x-2.5 sm:space-x-3 md:space-x-6">
                     <a href="#project" role="link" class="neo-brutalism-from-center">
                         Projects
                     </a>
@@ -39,7 +39,7 @@
         <div id="content" class="space-y-5">
             <!-- Professional summary -->
             <div class="mb-3 bg-neutral-100 p-5 sm:p-8 md:p-10 rounded-xl border border-neutral-800">
-                <p class="text-base md:text-lg lg:text-xl">I'm Alfian Aldy Hamdani, highly motivated and meticulous Informatics fresh graduate in Hasanuddin University. Experience working as Game Programmer, using Unity Engine, in various game projects. Very <b>adaptable</b> and <b>committed</b> to learn about new technology or framework.</p>
+                <p class="text-base md:text-lg lg:text-xl">I'm Alfian Aldy Hamdani, highly motivated and meticulous Informatics fresh graduate from Hasanuddin University. Experience working as Game Programmer, using Unity Engine, in various game projects. Very <b>adaptable</b> and <b>committed</b> to learn about new technology or framework.</p>
             </div>
 
             <!-- Projects -->
@@ -94,28 +94,28 @@
                             <p>Eat the box and get the higher score in 1 minute.</p>
                         </div>
                         
-                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#angry-birds">
-                            <div class="rounded-lg overflow-hidden w-full">
-                                <img src="assets/img/projects/angry-birds/icon.png" alt="icon" class="w-full group-hover:scale-105 object-cover transition duration-300 ease-in-out">
-                            </div>
-                            <h6>Angry Birds</h6>
-                            <p></p>
-                        </div>
-                        
-                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#flappy-bird">
-                            <div class="rounded-lg overflow-hidden w-full">
-                                <img src="assets/img/projects/flappy-bird/icon.png" alt="icon" class="w-full group-hover:scale-105 object-cover transition duration-300 ease-in-out">
-                            </div>
-                            <h6>Flappy Bird</h6>
-                            <p></p>
-                        </div>
-                        
                         <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#match-three">
                             <div class="rounded-lg overflow-hidden w-full">
                                 <img src="assets/img/projects/match-three/icon.png" alt="icon" class="w-full group-hover:scale-105 object-cover transition duration-300 ease-in-out">
                             </div>
                             <h6>Match Three</h6>
-                            <p></p>
+                            <p>A casual game where we will destroy the icons that appear by making at least 3 rows of the same icon.</p>
+                        </div>
+
+                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#angry-birds">
+                            <div class="rounded-lg overflow-hidden w-full">
+                                <img src="assets/img/projects/angry-birds/icon.png" alt="icon" class="w-full group-hover:scale-105 object-cover transition duration-300 ease-in-out">
+                            </div>
+                            <h6>Angry Birds</h6>
+                            <p>A game that focuses on the eponymous flock of colorful angry birds who try to save their eggs from pigs.</p>
+                        </div>
+
+                        <div class="rounded-md flex-[0_1_50%] md:flex-[0_1_33.3%] p-2.5 sm:p-4 lg:p-5 space-y-1 lg:space-y-2.5 cursor-pointer group" onclick="openModalByButton(this)" data-target="#flappy-bird">
+                            <div class="rounded-lg overflow-hidden w-full">
+                                <img src="assets/img/projects/flappy-bird/icon.png" alt="icon" class="w-full group-hover:scale-105 object-cover transition duration-300 ease-in-out">
+                            </div>
+                            <h6>Flappy Bird</h6>
+                            <p>A side-scroller game where the player controls a bird, attempting to fly between columns of green pipes without hitting them.</p>
                         </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                                             </tr>
                                         </table>
 
-                                        <h4>What I learned</h4>
+                                        <h4 class="mt-2.5">What I learned</h4>
                                         <ol class="list-decimal ml-5">
                                             <li>Agate's Model-View-Controller (MVC) Framework</li>
                                             <li>Determined module dependencies and communication between one module and another</li>
@@ -250,7 +250,7 @@
                                             </tr>
                                         </table>
 
-                                        <h4>My contributions</h4>
+                                        <h4 class="mt-2.5">My contributions</h4>
                                         <ol class="list-decimal ml-5">
                                             <li>Developed a prototype to create quests and branching events, triggered from dialog options, using Scriptable Object</li>
                                             <li>Integrated a third-party tool, Inky, with Unity to make it easier for story writer to write dialog and trigger events</li>
@@ -333,7 +333,7 @@
                                             </tr>
                                         </table>
 
-                                        <h4>My contributions</h4>
+                                        <h4 class="mt-2.5">My contributions</h4>
                                         <ol class="list-decimal ml-5">
                                             <li>Integrated a third-party tool, Inky, with Unity to make it easier to write dialog and trigger cinematic events, using Cinemachine, by story writer</li>
                                             <li>Developed a prototype to create quests and branching events, triggered from dialog options</li>
@@ -404,7 +404,7 @@
                                             </tr>
                                         </table>
 
-                                        <h4>My contributions</h4>
+                                        <h4 class="mt-2.5">My contributions</h4>
                                         <ol class="list-decimal ml-5">
                                             <li>Integrated a third-party tool, Vuforia, with Unity to detect augmented marker</li>
                                             <li>Applied augmented reality card narration reading</li>
@@ -416,6 +416,277 @@
                             <div class="modal-footer">
                                 <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
                                 <a class="btn btn-primary btn-icon-start" href="https://fiandy.itch.io/indonesia-virtual-field-tour" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                    Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="eat-eat-eat">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Eat eAt eaT</h3>
+                                <button class="btn border-none" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="flex flex-col lg:flex-row-reverse">
+                                    <div class="w-full lg:w-2/6 mb-3 lg:mb-0 lg:ml-4">
+                                        <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 overflow-x-scroll lg:overflow-x-hidden h-36 lg:h-full">
+                                            <img src="assets/img/projects/eat-eat-eat/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/eat-eat-eat/screenshot-2.png" alt="screenshot-2">
+                                            <img src="assets/img/projects/eat-eat-eat/screenshot-3.png" alt="screenshot-3">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-4/6">
+                                        <p>Eat the box and get the higher score in 1 minute.</p>
+                                        
+                                        <table>
+                                            <tr>
+                                                <td class="align-top min-w-[8rem] md:min-w-[9rem] lg:min-w-[10rem]">Release date</td>
+                                                <td class="align-top min-w-[1rem]">:</td>
+                                                <td>October 08<sup>th</sup>, 2021</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">Project type</td>
+                                                <td class="align-top">:</td>
+                                                <td>Solo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Programmer</td>
+                                            </tr>
+                                        </table>
+
+                                        <h4 class="mt-2.5">Project features</h4>
+                                        <ol class="list-decimal ml-5">
+                                            <li>Singleton implementation</li>
+                                            <li>Timer</li>
+                                            <li>Score calculator</li>
+                                            <li>Tutorial</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
+                                <a class="btn btn-primary btn-icon-start" href="https://github.com/alfianAH/dilo-challange/releases/" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                    Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="angry-birds">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Angry Birds</h3>
+                                <button class="btn border-none" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="flex flex-col lg:flex-row-reverse">
+                                    <div class="w-full lg:w-2/6 mb-3 lg:mb-0 lg:ml-4">
+                                        <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 overflow-x-scroll lg:overflow-x-hidden h-36 lg:h-full">
+                                            <img src="assets/img/projects/angry-birds/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/angry-birds/screenshot-2.png" alt="screenshot-2">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-4/6">
+                                        <p>A game that focuses on the eponymous flock of colorful angry birds who try to save their eggs from pigs.</p>
+                                        
+                                        <table>
+                                            <tr>
+                                                <td class="align-top min-w-[8rem] md:min-w-[9rem] lg:min-w-[10rem]">Release date</td>
+                                                <td class="align-top min-w-[1rem]">:</td>
+                                                <td>September 22<sup>nd</sup>, 2021</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">Project type</td>
+                                                <td class="align-top">:</td>
+                                                <td>Solo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Programmer</td>
+                                            </tr>
+                                        </table>
+
+                                        <h4 class="mt-2.5">Project features</h4>
+                                        <ol class="list-decimal ml-5">
+                                            <li>2D Physic</li>
+                                            <li>Object Oriented Programming (Inheritance)</li>
+                                            <li>Singleton</li>
+                                            <li>Trajectory</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
+                                <a class="btn btn-primary btn-icon-start" href="https://github.com/alfianAH/angry-birds/releases" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                    Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="match-three">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Match Three</h3>
+                                <button class="btn border-none" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="flex flex-col lg:flex-row-reverse">
+                                    <div class="w-full lg:w-2/6 mb-3 lg:mb-0 lg:ml-4">
+                                        <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 overflow-x-scroll lg:overflow-x-hidden h-36 lg:h-full">
+                                            <img src="assets/img/projects/match-three/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/match-three/screenshot-2.png" alt="screenshot-2">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-4/6">
+                                        <p>A casual game where we will destroy the icons that appear by making at least 3 rows of the same icon.</p>
+                                        
+                                        <table>
+                                            <tr>
+                                                <td class="align-top min-w-[8rem] md:min-w-[9rem] lg:min-w-[10rem]">Release date</td>
+                                                <td class="align-top min-w-[1rem]">:</td>
+                                                <td>September 25<sup>th</sup>, 2021</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">Project type</td>
+                                                <td class="align-top">:</td>
+                                                <td>Solo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Programmer</td>
+                                            </tr>
+                                        </table>
+
+                                        <h4 class="mt-2.5">Project features</h4>
+                                        <ol class="list-decimal ml-5">
+                                            <li>Singleton</li>
+                                            <li>Score calculator</li>
+                                            <li>Timer</li>
+                                            <li>Tween (Scripted Animation with Coroutine)</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
+                                <a class="btn btn-primary btn-icon-start" href="https://github.com/alfianAH/match-three-hexagon/releases" target="_blank" rel="noopener noreferrer">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                                    </svg>
+                                    Play
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="flappy-bird">
+                    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Flappy Bird</h3>
+                                <button class="btn border-none" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="flex flex-col lg:flex-row-reverse">
+                                    <div class="w-full lg:w-2/6 mb-3 lg:mb-0 lg:ml-4">
+                                        <div class="flex flex-row lg:flex-col space-x-4 lg:space-x-0 lg:space-y-4 overflow-x-scroll lg:overflow-x-hidden h-36 lg:h-full">
+                                            <img src="assets/img/projects/flappy-bird/screenshot-1.png" alt="screenshot-1">
+                                            <img src="assets/img/projects/flappy-bird/screenshot-2.png" alt="screenshot-2">
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full lg:w-4/6">
+                                        <p>A side-scroller game where the player controls a bird, attempting to fly between columns of green pipes without hitting them.</p>
+                                        
+                                        <table>
+                                            <tr>
+                                                <td class="align-top min-w-[8rem] md:min-w-[9rem] lg:min-w-[10rem]">Release date</td>
+                                                <td class="align-top min-w-[1rem]">:</td>
+                                                <td>August 07<sup>th</sup>, 2020</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">Project type</td>
+                                                <td class="align-top">:</td>
+                                                <td>Solo</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td class="align-top">My role</td>
+                                                <td class="align-top">:</td>
+                                                <td>Game Programmer</td>
+                                            </tr>
+                                        </table>
+
+                                        <h4 class="mt-2.5">Project features</h4>
+                                        <ol class="list-decimal ml-5">
+                                            <li>Score calculator</li>
+                                            <li>Object spawner and despawner</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal" onclick="closeModalByButton(this)">Tutup</button>
+                                <a class="btn btn-primary btn-icon-start" href="https://github.com/alfianAH/flappy-bird/releases" target="_blank" rel="noopener noreferrer">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
                                         <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
                                     </svg>
